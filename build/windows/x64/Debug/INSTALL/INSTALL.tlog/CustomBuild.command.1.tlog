@@ -1,0 +1,10 @@
+^C:\USERS\ALFRE\MOVIEAPP_200644\MOVIEAPP_200644\BUILD\WINDOWS\CMAKEFILES\478F38BB171CD19C3ADCCD23A179B30C\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
